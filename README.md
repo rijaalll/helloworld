@@ -1,47 +1,103 @@
-# Astro Starter Kit: Minimal
+# Hello World - Astro.js Edition 🚀
 
-```sh
-npm create astro@latest -- --template minimal
+Yo! Ini adalah project **Hello World** yang dibuat pake **Astro.js** dan **Tailwind CSS**. Simple banget tapi keren, cocok buat yang lagi belajar atau pengen coba-coba teknologi baru.
+
+## Tech Stack yang Dipake 💻
+
+- **Astro.js** - Framework modern yang bikin website jadi cepet banget
+- **React** - Buat komponen interaktif (walaupun cuma dikit sih)
+- **Tailwind CSS** - Utility-first CSS framework yang bikin styling jadi gampang
+- **TypeScript** - Biar code lebih aman dan terstruktur
+
+## Fitur yang Ada 🌟
+
+- ✅ Hello World yang stylish dengan Tailwind
+- ✅ Layout yang responsive
+- ✅ Footer dengan link ke Instagram creator
+- ✅ SEO-friendly dengan meta tags
+- ✅ Docker support buat deployment
+- ✅ Hot reload untuk development yang smooth
+
+## Cara Install & Jalanin 🛠️
+
+### Prerequisites
+Pastikan udah install:
+- Node.js (versi 18 atau lebih baru)
+- npm atau yarn
+
+### Installation
+```bash
+# Clone repository
+git clone <repository-url>
+cd hello-world
+
+# Install dependencies
+npm install
+
+# Jalanin development server
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+Website bakal jalan di `http://localhost:4321`
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Pake Docker (Opsional)
+```bash
+# Build Docker image
+docker build -t hello-world-astro .
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+# Jalanin container
+docker run -p 4321:4321 hello-world-astro
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Structure Project 📁
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```
+src/
+├── layouts/
+│   └── layout.astro          # Layout utama
+├── pages/
+│   └── index.astro           # Homepage
+├── section/
+│   ├── main/
+│   │   └── MainApp.jsx       # Komponen utama
+│   └── footer/
+│       └── FooterApp.jsx     # Footer component
+└── styles/
+    └── global.css            # Global styles dengan Tailwind
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Customization 🎨
 
-## 🧞 Commands
+Kalau mau ubah-ubah, ini beberapa file penting:
 
-All commands are run from the root of the project, from a terminal:
+- **`src/section/main/MainApp.jsx`** - Ubah text "Hello World" di sini
+- **`src/styles/global.css`** - Tambahin atau ubah styling
+- **`src/layouts/layout.astro`** - Ubah meta tags, title, dll
+- **`src/section/footer/FooterApp.jsx`** - Ganti link sosmed atau info creator
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Commands yang Berguna 📝
 
-## 👀 Want to learn more?
+```bash
+npm run dev      # Jalanin development server
+npm run build    # Build production
+npm run preview  # Preview build hasil
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Fun Facts 🤓
+
+- Project ini dibuat sebagai hasil belajar selama satu minggu
+- Pake Tailwind CSS dengan approach utility-first yang bikin CSS jadi lebih clean
+- Astro.js dipilih karena performanya yang kenceng dan developer experience yang oke
+- Ada Docker support jadi deployment jadi lebih gampang
+
+## Credit 👨‍💻
+
+Dibuat dengan ❤️ oleh [Ahmad Rizal](https://www.instagram.com/ahmdrizaalll)
+
+## License 📄
+
+Feel free to use, modify, atau learn from this project. Happy coding! 🎉
+
+---
+
+*"Sometimes the simplest projects teach us the most"* ✨
