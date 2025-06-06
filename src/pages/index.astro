@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/layout.astro';
+import MainApp from '../section/main/MainApp';
+import FooterApp from '../section/footer/FooterApp';
+---
+
+<Layout title="Hello World">
+	<MainApp client:only="load"/>
+	<FooterApp client:only="load"/>
+</Layout>
